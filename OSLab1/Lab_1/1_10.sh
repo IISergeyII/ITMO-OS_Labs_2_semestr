@@ -1,4 +1,4 @@
 #!/bin/bash
 
-man bash | sed 's/\s/\n/g' | sort | uniq -c | sort -nr |
-    awk 'length($2) > 3 {print "Word ", $2, " occurs ", $1, " times"}' | head -3
+man bash | grep -oi "[a-z][A-Z]\{4,\}" | tr "[A-Z]" "[a-z]" | 
+sort | uniq -c | sort -nr | head -3
