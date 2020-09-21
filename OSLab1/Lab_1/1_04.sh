@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$PWD" == "$HOME" ]]
+if [[ $PWD =~ $HOME/* ]]
 then
     echo "$HOME"
     exit 0
