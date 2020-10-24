@@ -2,4 +2,4 @@
 
 at now + 2 minutes -f ./3_01.sh
 
-tail -n 1 -f ~/report 
+tail -n0 -f ~/report 
